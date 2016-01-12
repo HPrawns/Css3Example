@@ -1,0 +1,75 @@
+﻿body {
+}
+
+.firstDiv {
+    margin: 0 auto;
+    border: 0px solid red;
+    width: 1400px;
+    margin-top: 70px;
+}
+
+.blockDiv {
+    border: 0px solid blue;
+    width: 100%;
+    border-radius: 3px;
+    box-shadow: 3px 3px 3px #c4c4c4;
+    margin-top: 25px;
+}
+
+    .blockDiv h1 {
+        font-size: x-large;
+        margin-left: 17px;
+    }
+
+    .blockDiv p {
+        margin-left: 17px;
+        font-size: 25px;
+    }
+
+.contentDiv {
+    text-indent: 2em;
+    letter-spacing: 1.3px;
+    line-height: 1.2em;
+}
+
+.contentDiv, .showDiv, .codeDiv {
+    margin: 5px auto;
+    width: 97%;
+}
+
+hr {
+    width: 97%;
+}
+
+.ordinaryBtn {
+    height: 28px;
+    font: 12px;
+    border-radius: 2px;
+    border: 1px solid #c4c4c4;
+    width: 80px;
+}
+
+.showBtn {
+    background-color: #7E0000;
+    color: #fff;
+    /*transition: background-color 300ms;*/
+}
+
+    .showBtn:hover {
+        background-color: #FF0000;
+    }
+
+.codeDiv {
+}
+
+.classspan {
+    color: #0000FF;
+}
+
+.titilespan {
+    color: red;
+}
+
+.pseudoclass {
+    color: #960027;
+}

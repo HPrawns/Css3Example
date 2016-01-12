@@ -1,0 +1,33 @@
+﻿   /*第一个示例样式_开始*/
+        .schedule_text {
+            background: #fbfbfc;
+            width: 600px;
+            height: 80px;
+            position: relative;
+            border: 1px solid #007ACC;
+        }
+            .schedule_text:before {
+                content: "THIS";
+                position: absolute;
+                top: 18px;
+                left: 250px;
+                font-size: 40px;
+                color: #42abd6;
+            }
+
+        .schedule_text_d1 {
+            width: 0%;
+            height: 80px;
+            position: absolute;
+            background: #42abd6;
+            overflow: hidden;
+        }
+            .schedule_text_d1:before {
+                content: "THIS";
+                position: absolute;
+                top: 18px;
+                left: 250px;
+                font-size: 40px;
+                color: #fbfbfc;
+            }
+        /*第一个示例样式_结束*/

@@ -3,7 +3,49 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Css的全部示例和源码</title>
+    <script src="Script/jquery-1.8.3.js"></script>
+    <link href="Css/Initialization.css" rel="stylesheet" />
+    <link href="Css/PublicCss.css" rel="stylesheet" />
+    <link href="Css/CssPage_css.css" rel="stylesheet" />
+    <script src="Script/CssPage_script.js"></script>
+
+    <style>
+     
+    </style>
+    <script>
+        $(function () {
+
+        });
+
+    </script>
 </head>
 <body>
+    <div class="firstDiv">
+        <div class="blockDiv" title="2016-01-11-2016-01-12">
+            <h1>进度条_文字反色</h1>
+            <hr />
+            <div class="contentDiv">
+                这个效果的实现主要使用了2个<span class="titilespan">div</span>，以及各自的伪类<span class="pseudoclass">:before</span>外层<span>div</span>来确定整体的长宽，其伪类用来确定进度条未加载时的颜色。第二个div的宽度缓慢增加，来实现进度条的填充效果。第二个伪类内容的坐标必须和第一个伪类相同用绝对定位来实现。整体实现原理类似：２个<span class="titilespan">div</span>，一内一外。内层的宽度逐渐增加并且填充背景颜色。由于伪类的位置一样,随着内层的<span class="titilespan">div</span>宽度填充，伪类也会加载，伪类上的字体覆盖原来的，实现了变色的效果。
+            </div>
+            <p>效果如下：</p>
+            <hr />
+            <div class="showDiv">
+                <div class="schedule_text">
+                    <div class="schedule_text_d1">
+                    </div>
+                </div>
+                <br />
+                <input type="button" class="ordinaryBtn showBtn" value="点击试试" onclick="Schedule_textInit(100, 2000)" />&nbsp<input type="button" class="ordinaryBtn" value="还原" onclick="    Schedule_textInit(0, 0)" />
+            </div>
+            <p>代码如下：</p>
+            <hr />
+            <div class="codeDiv">
+                <div>Css代码：</div>
+                <img alt="" src="Img/schedule_text_css.png" />
+                <div>JavaScript代码:</div>
+                <img alt="" src="Img/schedule_text_js.png" />
+            </div>
+        </div>
+    </div>
 </body>
 </html>
