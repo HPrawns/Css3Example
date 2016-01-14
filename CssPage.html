@@ -1,5 +1,4 @@
-﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Css的全部示例和源码</title>
@@ -10,22 +9,23 @@
     <script src="Script/CssPage_script.js"></script>
 
     <style>
-     
     </style>
+
     <script>
         $(function () {
-
+            var slideMenuObj = new slideMenu("slideMenu", "hrdiv", 500);
+            slideMenuObj.Init();
         });
 
     </script>
 </head>
 <body>
     <div class="firstDiv">
-        <div class="blockDiv" title="2016-01-11-2016-01-12">
+        <div class="blockDiv" title="2016-01-11----2016-01-12">
             <h1>进度条_文字反色</h1>
             <hr />
             <div class="contentDiv">
-                这个效果的实现主要使用了2个<span class="titilespan">div</span>，以及各自的伪类<span class="pseudoclass">:before</span>外层<span>div</span>来确定整体的长宽，其伪类用来确定进度条未加载时的颜色。第二个div的宽度缓慢增加，来实现进度条的填充效果。第二个伪类内容的坐标必须和第一个伪类相同用绝对定位来实现。整体实现原理类似：２个<span class="titilespan">div</span>，一内一外。内层的宽度逐渐增加并且填充背景颜色。由于伪类的位置一样,随着内层的<span class="titilespan">div</span>宽度填充，伪类也会加载，伪类上的字体覆盖原来的，实现了变色的效果。
+                这个效果的实现主要使用了2个<span class="titilespan">div</span>，以及各自的伪类<span class="pseudoclass">:before</span>外层<span>div</span>来确定整体的长宽，其伪类用来确定进度条未加载时的颜色。第二个<span class="titilespan">div</span>的宽度缓慢增加，来实现进度条的填充效果。第二个伪类内容的坐标必须和第一个伪类相同用绝对定位来实现。整体实现原理类似：２个<span class="titilespan">div</span>，一内一外。内层的宽度逐渐增加并且填充背景颜色。由于伪类的位置一样,随着内层的<span class="titilespan">div</span>宽度填充，伪类也会加载，伪类上的字体覆盖原来的，实现了变色的效果。
             </div>
             <p>效果如下：</p>
             <hr />
@@ -35,7 +35,7 @@
                     </div>
                 </div>
                 <br />
-                <input type="button" class="ordinaryBtn showBtn" value="点击试试" onclick="Schedule_textInit(100, 2000)" />&nbsp<input type="button" class="ordinaryBtn" value="还原" onclick="    Schedule_textInit(0, 0)" />
+                <input type="button" class="ordinaryBtn showBtn" value="点击试试" onclick="Schedule_textInit(100, 5000)" />&nbsp<input type="button" class="ordinaryBtn" value="还原" onclick="    Schedule_textInit(0, 0)" />
             </div>
             <p>代码如下：</p>
             <hr />
@@ -45,6 +45,68 @@
                 <div>JavaScript代码:</div>
                 <img alt="" src="Img/schedule_text_js.png" />
             </div>
+            <br />
+        </div>
+
+        <div class="blockDiv" title="2016-01-13----2016-01-14">
+            <h1>进度条_方块版</h1>
+            <hr />
+            <div class="contentDiv">
+                这个效果实现比较简单，两层div。外层是进度条的外壳，内层用许多小方块填充。计算好比例和速度，使用计时器动态添加新的div来填充。
+                <br />
+            </div>
+            <p>效果如下：</p>
+            <hr />
+            <div class="showDiv">
+                <div class="scheduleblock">
+                </div>
+                <br />
+                <input type="button" class="ordinaryBtn showBtn" value="点击试试" onclick="scheduleblockInit()" />&nbsp<input type="button" class="ordinaryBtn" value="还原" onclick="    scheduleblockClear('')" />
+            </div>
+            <p>代码如下：</p>
+            <hr />
+            <div class="codeDiv">
+                <div>Css代码：</div>
+                <img alt="" src="Img/scheduleblock_css.png" />
+                <div>JavaScript代码:</div>
+                <img alt="" src="Img/scheduleblock_js.png" />
+            </div>
+            <br />
+        </div>
+
+        <div class="blockDiv" title="2016-01-14----2016-01-14">
+            <h1>菜单栏_滑动</h1>
+            <hr />
+            <div class="contentDiv">
+                使用<span class="titilespan">ul li</span>等标签来构筑基本的菜单选项卡，在相邻的地方 设置一个<span class="titilespan">div</span>，通过给li绑定鼠标移入移出事件来动态设置 相邻<span class="titilespan">div</span>的left等属性。使得一直保持在<span class="titilespan">li</span>的下方
+                <br />
+            </div>
+            <p>效果如下：</p>
+            <hr />
+            <div class="showDiv">
+                <div class="slideMenu">
+                    <ul class="slideMenu_ul">
+                        <li><a href="#">导航菜单一</a></li>
+                        <li><a href="#">导航菜单一</a></li>
+                        <li><a href="#">导航菜单一</a></li>
+                        <li><a href="#">导航菜单一</a></li>
+                        <li><a href="#">导航菜单一</a></li>
+                        <li><a href="#">导航菜单一</a></li>
+                    </ul>
+                    <div class="hrdiv"></div>
+                </div>
+                <br />
+                <br />
+            </div>
+            <p>代码如下：</p>
+            <hr />
+            <div class="codeDiv">
+                <div>Css代码：</div>
+                <img alt="" src="Img/slideMenu_css.png" />
+                <div>JavaScript代码:</div>
+                <img alt="" src="Img/slideMenu_js.png" />
+            </div>
+            <br />
         </div>
     </div>
 </body>

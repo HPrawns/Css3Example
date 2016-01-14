@@ -1,33 +1,98 @@
-﻿   /*第一个示例样式_开始*/
-        .schedule_text {
-            background: #fbfbfc;
-            width: 600px;
-            height: 80px;
-            position: relative;
-            border: 1px solid #007ACC;
-        }
-            .schedule_text:before {
-                content: "THIS";
-                position: absolute;
-                top: 18px;
-                left: 250px;
-                font-size: 40px;
-                color: #42abd6;
-            }
+﻿/*第一个示例样式_开始*/
+.schedule_text {
+    background: #fbfbfc;
+    width: 600px;
+    height: 80px;
+    position: relative;
+    border: 1px solid #007ACC;
+}
 
-        .schedule_text_d1 {
-            width: 0%;
-            height: 80px;
-            position: absolute;
-            background: #42abd6;
-            overflow: hidden;
+    .schedule_text:before {
+        content: "THIS";
+        position: absolute;
+        top: 18px;
+        left: 250px;
+        font-size: 40px;
+        color: #42abd6;
+    }
+
+.schedule_text_d1 {
+    width: 0%;
+    height: 80px;
+    position: absolute;
+    background: #42abd6;
+    overflow: hidden;
+}
+
+    .schedule_text_d1:before {
+        content: "THIS";
+        position: absolute;
+        top: 18px;
+        left: 250px;
+        font-size: 40px;
+        color: #fbfbfc;
+    }
+/*第一个示例样式_结束*/
+
+/*第二个示例样式_开始*/
+.scheduleblock {
+    height: 35px;
+    width: 455px;
+    overflow: hidden;
+    border-radius: 4px;
+    position: relative;
+    background-color: #312D35;
+}
+
+    .scheduleblock div {
+        height: 25px;
+        width: 25px;
+        margin-top: 5px;
+        margin-left: 3px;
+        float: left;
+    }
+
+        .scheduleblock div:nth-child(odd) {
+            background-color: #4C9ED9;
         }
-            .schedule_text_d1:before {
-                content: "THIS";
-                position: absolute;
-                top: 18px;
-                left: 250px;
-                font-size: 40px;
-                color: #fbfbfc;
-            }
-        /*第一个示例样式_结束*/
+
+        .scheduleblock div:nth-child(even) {
+            background-color: #396F98;
+        }
+
+/*第二个示例样式_结束*/
+
+/*第三个示例样式_开始*/
+.slideMenu {
+    border: 1px solid #34495e;
+    background-color: #34495e;
+    height: 65px;
+    border-radius: 2px;
+}
+
+.slideMenu_ul {
+    margin: 12px 0 0 12px;
+    height: 40px;
+}
+
+.slideMenu li {
+    height: 40px;
+    line-height: 40px;
+    float: left;
+    width: 120px;
+    text-align: center;
+    color: white;
+    background-color: #2980b9;
+    margin-left: 2px;
+}
+
+    .slideMenu li a {
+        color: white;
+    }
+
+.hrdiv {
+    border-bottom: 4px solid #1abc9c;
+    float: left;
+    position: absolute;
+}
+/*第三个示例样式_结束*/
