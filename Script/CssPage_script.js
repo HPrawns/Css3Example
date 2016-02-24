@@ -48,3 +48,12 @@ slideMenu.prototype.Init = function () {
         }, "fast");
     });
 }
+//第四个脚本示例,返回顶部
+
+function BacktoTop() {
+    $("#backtop").on("click", function () {
+        $("html,body").animate({
+            scrollTop: 0
+        }, 800);
+    });
+}

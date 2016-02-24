@@ -56,7 +56,7 @@ hr {
 .showBtn {
     background-color: #7E0000;
     color: #fff;
-    /*transition: background-color 300ms;*/
+    transition: background-color 300ms;
 }
 
     .showBtn:hover {

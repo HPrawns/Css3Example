@@ -96,3 +96,20 @@
     position: absolute;
 }
 /*第三个示例样式_结束*/
+
+
+/*第四个示例样式_开始*/
+
+
+.toolbar {bottom: 5px;margin-left: -26px;}
+.toolbar_item, .toolbar_btn, .toolbar_icon, .toorbar_text {width:52px;height:52px;}
+.toolbar_item{position:relative;display:block;margin-top:1px}
+.toolbar_btn, .toolbar_icon, .toorbar_text {position:absolute;left:0;}
+.toolbar_btn{top:0;overflow:hidden;border-radius:2px}
+.toolbar_icon{top:0;background-color:#6f5040;font-size:32px;color:#fff;text-align:center;line-height:58px;transition:top .5s}
+.toorbar_text{top:52px;background-color:#6f5040;font-size:12px;color:#fff;text-align:center;line-height:1.2;padding-top:12px;transition:top .5s}
+.toolbar_item:hover .toolbar_icon{top:-52px}
+.toolbar_item:hover .toorbar_text{top:0}
+
+
+/*第四个示例样式_开始*/
