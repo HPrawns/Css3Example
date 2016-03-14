@@ -51,8 +51,11 @@ hr {
     border-radius: 2px;
     border: 1px solid #c4c4c4;
     width: 80px;
+     transition: border 500ms;
 }
-
+    .ordinaryBtn:hover {
+        border:1px solid #808080;
+    }
 .showBtn {
     background-color: #7E0000;
     color: #fff;

@@ -98,7 +98,7 @@
                     me.sections.css(_prefix + "transform", translate);
                 } else {
                     var animateCss = me.direction ? { top: -dest.top } : { lest: -dest.left };
-                    me.sections.animate(animateCss, me.settings.duration, function() {
+                    me.sections.stop(true).animate(animateCss, me.settings.duration, function () {
 
                     });
                 }
