@@ -57,3 +57,23 @@ function BacktoTop() {
         }, 800);
     });
 }
+//方块移动
+function MoveBlock() {
+    var BlockArry = Array.apply(null, { length: 81 }).map(function (_, index) {
+        return {
+            id: index,
+            number: index % 9 + 1
+        }
+    });
+    new Vue({
+        el: '#sudoku-demo',
+        data: {
+            cells: BlockArry
+        },
+        methods: {
+            shuffle: function () {
+                this.cells = _.shuffle(this.cells)      // _.shuffle为lodash 中的一个方法 打乱数组顺序
+            }
+        }
+    })
+}

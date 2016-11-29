@@ -1,4 +1,4 @@
-﻿/*第一个示例样式_开始*/
+﻿/*进度条_文字反色样式_开始*/
 .schedule_text {
     background: #fbfbfc;
     width: 600px;
@@ -32,9 +32,9 @@
         font-size: 40px;
         color: #fbfbfc;
     }
-/*第一个示例样式_结束*/
+/*进度条_文字反色样式_结束*/
 
-/*第二个示例样式_开始*/
+/*进度条_方块版_开始*/
 .scheduleblock {
     height: 35px;
     width: 455px;
@@ -60,9 +60,9 @@
             background-color: #396F98;
         }
 
-/*第二个示例样式_结束*/
+/*进度条_方块版样式_结束*/
 
-/*第三个示例样式_开始*/
+/*菜单栏_滑动样式_开始*/
 .slideMenu {
     border: 1px solid #34495e;
     background-color: #34495e;
@@ -94,22 +94,183 @@
     border-bottom: 4px solid #1abc9c;
     float: left;
     position: absolute;
+    width: 120px;
 }
-/*第三个示例样式_结束*/
+/*菜单栏_滑动样式_结束*/
 
 
-/*第四个示例样式_开始*/
+/*边侧工具栏_返回顶部_滑动样式_开始*/
 
 
-.toolbar {bottom: 5px;margin-left: -26px;}
-.toolbar_item, .toolbar_btn, .toolbar_icon, .toorbar_text {width:52px;height:52px;}
-.toolbar_item{position:relative;display:block;margin-top:1px}
-.toolbar_btn, .toolbar_icon, .toorbar_text {position:absolute;left:0;}
-.toolbar_btn{top:0;overflow:hidden;border-radius:2px}
-.toolbar_icon{top:0;background-color:#6f5040;font-size:32px;color:#fff;text-align:center;line-height:58px;transition:top .5s}
-.toorbar_text{top:52px;background-color:#6f5040;font-size:12px;color:#fff;text-align:center;line-height:1.2;padding-top:12px;transition:top .5s}
-.toolbar_item:hover .toolbar_icon{top:-52px}
-.toolbar_item:hover .toorbar_text{top:0}
+.toolbar {
+    bottom: 5px;
+    margin-left: -26px;
+}
+
+.toolbar_item, .toolbar_btn, .toolbar_icon, .toorbar_text {
+    width: 52px;
+    height: 52px;
+}
+
+.toolbar_item {
+    position: relative;
+    display: block;
+    margin-top: 1px;
+}
+
+.toolbar_btn, .toolbar_icon, .toorbar_text {
+    position: absolute;
+    left: 0;
+}
+
+.toolbar_btn {
+    top: 0;
+    overflow: hidden;
+    border-radius: 2px;
+}
+
+.toolbar_icon {
+    top: 0;
+    background-color: #6f5040;
+    font-size: 32px;
+    color: #fff;
+    text-align: center;
+    line-height: 58px;
+    transition: top .5s;
+}
+
+.toorbar_text {
+    top: 52px;
+    background-color: #6f5040;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    line-height: 1.2;
+    padding-top: 12px;
+    transition: top .5s;
+}
+
+.toolbar_item:hover .toolbar_icon {
+    top: -52px;
+}
+
+.toolbar_item:hover .toorbar_text {
+    top: 0;
+}
 
 
-/*第四个示例样式_开始*/
+/*边侧工具栏_返回顶部_滑动样式_结束*/
+/*书签效果样式_开始*/
+.booktip img {
+    width: 300px;
+    height: 150px;
+}
+
+.booktip {
+    border: 0px solid red;
+    position: relative;
+    margin: 20px;
+}
+    /*主要区域*/
+    .booktip:before {
+        position: absolute;
+        top: 5px;
+        left: -8px;
+        z-index: 1; /*定位相关*/
+        padding-right: 10px;
+        font-weight: bold;
+        line-height: 0px;
+        color: #000;
+        height: 0px;
+        border: 15px solid #EE7600;
+        border-right-color: transparent; /*去掉右边的边框*/
+        content: "图片"; /*这里定义标签上的文字*/
+        box-shadow: -0px 5px 5px -5px #000;
+    }
+
+    .booktip:after {
+        content: "";
+        position: absolute;
+        top: 35px;
+        left: -8px;
+        border: 4px solid #89540c;
+        border-left-color: transparent;
+        border-bottom-color: transparent;
+    }
+/*书签效果样式_结束*/
+/*链接焦点获取高亮_开始*/
+.LinkMark {
+    height: 80px;
+    width: 500px;
+    border: 0px solid red;
+    background-color: #425A6C;
+}
+
+    .LinkMark a {
+        position: relative;
+        display: inline-block;
+        outline: none;
+        text-decoration: none;
+        color: #000;
+        font-size: 3em;
+        line-height: 80px;
+        margin-left: 80px;
+        color: #fbfbfc;
+    }
+
+        .LinkMark a::after {
+            content: "\5B";
+            transition: left .5s;
+            left: -15px;
+        }
+
+        .LinkMark a::before {
+            content: "\5D";
+            transition: right .5s;
+            right: -15px;
+        }
+
+        .LinkMark a::before, .LinkMark a::after {
+            position: absolute;
+            top: -4px;
+            opacity: 0;
+        }
+
+        .LinkMark a:hover::after {
+            left: -30px;
+            opacity: 1;
+        }
+
+        .LinkMark a:hover::before {
+            right: -30px;
+            opacity: 1;
+        }
+/*链接焦点获取高亮_结束*/
+/*方块移动_开始*/
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 238px;
+  margin-top: 10px;
+}
+.cell {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  border: 1px solid #aaa;
+  margin-right: -1px;
+  margin-bottom: -1px;
+}
+.cell:nth-child(3n) {
+  margin-right: 0;
+}
+.cell:nth-child(27n) {
+  margin-bottom: 0;
+}
+/*vue 的move方法*/
+.cell-move {        
+  transition: transform 1s;
+}
+/*方块移动_结束*/

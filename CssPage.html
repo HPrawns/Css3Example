@@ -1,15 +1,16 @@
 ﻿<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title >Css的全部示例和源码</title>
-    <link href="Img/html5_logo_512.ico"    rel="icon" />
-    <script src="Script/jquery-1.8.3.js"></script>
+    <title>Css的全部示例和源码</title>
+    <link href="Img/html5_logo_512.ico" rel="icon" />
+    <script src="Script/jquery-1.8.3.js" type="text/javascript"></script>
     <link href="Css/Initialization.css" rel="stylesheet" />
     <link href="Css/fonts_icon.css" rel="stylesheet" />
     <link href="Css/PublicCss.css" rel="stylesheet" />
     <link href="Css/CssPage_css.css" rel="stylesheet" />
     <script src="Script/CssPage_script.js"></script>
-   
+    <script src="Script/Vue_2.0.js"></script>
+    <script src="Script/lodash.min.js"></script>
     <style>
     </style>
 
@@ -19,6 +20,8 @@
             slideMenuObj.Init();
 
             BacktoTop();
+
+
         });
 
     </script>
@@ -153,6 +156,111 @@
             </div>
             <br />
         </div>
+
+        <div class="blockDiv" title="2016-10-11----2016-10-11">
+            <h1>书签效果</h1>
+            <hr />
+            <div class="contentDiv">
+                书签使用伪元素:after和:before实现,其中一个实现主要的标签,另外一个实现转角处的小阴影,视觉上实现一种立体感
+                <br />
+            </div>
+            <p>效果如下：</p>
+            <hr />
+            <div class="showDiv">
+                <div class="booktip">
+                    <img src="Img/Bg_img/dog.jpg" />
+                </div>
+                <br />
+                <br />
+            </div>
+            <p>代码如下：</p>
+            <hr />
+            <div class="codeDiv">
+                <div>
+                    Css代码：
+                    <code></code>
+                </div>
+                <div>
+                    JavaScript代码:
+                       <code></code>
+                </div>
+            </div>
+            <br />
+        </div>
+
+
+        <div class="blockDiv" title="2016-10-11----2016-10-12">
+            <h1>链接焦点获取高亮</h1>
+            <hr />
+            <div class="contentDiv">
+                暂无
+                <br />
+            </div>
+            <p>效果如下：</p>
+            <hr />
+            <div class="showDiv">
+                <div class="LinkMark">
+                    <a href="javascript:void(0)">Hello</a>
+
+                    <a href="javascript:void(0)">World</a>
+                </div>
+                <br />
+                <br />
+            </div>
+            <p>代码如下：</p>
+            <hr />
+            <div class="codeDiv">
+                <div>
+                    Css代码：
+                    <code></code>
+                </div>
+                <div>
+                    JavaScript代码:
+                       <code></code>
+                </div>
+            </div>
+            <br />
+        </div>
+
+
+        <div class="blockDiv" title="2016-11-29----2016-11-29">
+            <h1>方块移动</h1>
+            <hr />
+            <div class="contentDiv">
+                暂无
+                <br />
+            </div>
+            <p>效果如下：</p>
+            <hr />
+            <div class="showDiv">
+                <div id="sudoku-demo" class="demo">
+                    <transition-group name="cell" tag="div" class="container">
+                    <div v-for="cell in cells" :key="cell.id" class="cell">
+                      {{ cell.number }}
+                    </div>
+                  </transition-group>
+                    <input type="button" class="ordinaryBtn showBtn" value="点击试试" v-on:click="shuffle" id="shuffle" />
+                </div>
+            </div>
+            <p>代码如下：</p>
+            <hr />
+            <div class="codeDiv">
+                <div>
+                    Css代码：
+                    <code></code>
+                </div>
+                <div>
+                    JavaScript代码:
+                       <code></code>
+                </div>
+            </div>
+            <br />
+            <script>
+                MoveBlock();
+            </script>
+        </div>
+
+
 
     </div>
 </body>
